@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+    tools:context=".MainActivity">
 
     <Spinner
         android:id="@+id/beer_color"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        />
+        android:entries="@array/beer_colors"/>
 
     <Button
         android:id="@+id/find_beer"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:text="Find Beer" />
+        android:text="@string/find_beer" />
 
     <TextView
         android:id="@+id/brands"
@@ -30,5 +30,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:text="Beer types" />
+        android:text="@string/brands" />
 </LinearLayout>
